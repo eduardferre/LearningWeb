@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Portfolio de @eduardferre</title>
+
+    <meta
+      name="description"
+      content="Portfolio de eduardferre - Recién graduado y con muchas ganas de trabajar y aprender"
+    />
+
+    <!-- OPEN GRAPH -->
+    <meta property="og:title" content="Portfolio de un Ingeniero de Software" />
+    <meta
+      property="og:description"
+      content="Portfolio de un Ingeniero de Software"
+    />
+    <meta property="og:image" content="/public/FOTO.JPG" />
+    <meta property="og:image:alt" content="Una fotografía de Eduard Ferré" />
+    <!-- OPEN GRAPH -->
+
+    <!-- SEO -->
+    <link
+      rel="alternate"
+      href="https://linkedin.com/in/eduardferre/en"
+      hreflang="en_US"
+    />
+    <link rel="canonical" href="https://linkedin.com/in/eduardferre/" />
+    <!-- SEO -->
+
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#993299" />
+
+    <link rel="icon" type="image/jpg" href="/public/FOTO.JPG" />
+
+    <style>
+      body {
+        background: rgb(255, 255, 255);
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>Portfolio de @eduardferre</h1>
+
+      <nav>
+        <a href="#experiencia">Experiencia</a>
+        <a href="#proyectos">Proyectos</a>
+        <a
+          href="https://linkedin.com/in/eduardferre"
+          target="_blank"
+          rel="noreferrer"
+          >Linked In</a
+        >
+      </nav>
+    </header>
+
+    <dialog id="modal">
+      <h1>Modal</h1>
+      <p>Nativa</p>
+      <button id="hide">Cerar modal</button>
+    </dialog>
+
+    <button id="show">Ver más información</button>
+
+    <script>
+      window.show.addEventListener('click', () => {
+        window.modal.showModal()
+      })
+
+      window.hide.addEventListener('click', () => {
+        window.modal.close()
+      })
+    </script>
+
+    <!-- <iframe
+      style="width: 80%; aspect-ratio: 16/9"
+      src="https://www.youtube.com/embed/8aryHZ8Z9WY?si=Jokizg8gw8S9BPOo"
+      title="Linked In @eduardferre"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen
+    ></iframe>
+
+    <audio controls src="/public/sample4.mp3"></audio>
+
+    <video
+      autoplay
+      muted
+      loop
+      controls
+      poster="/public/FOTO.JPG"
+      src="/public/sample_960x400_ocean_with_audio.mp4"
+    ></video> -->
+
+    <main>
+      <p>1 año de experiencia como <strong>Ingeniero de Software</strong>.</p>
+
+      <h2 id="experiencia">Experiencia</h2>
+
+      <ul>
+        <li class="list-item">Universitat Politécnica de Catalunya - 2023</li>
+        <li class="list-item">Giesecke+Devrient - 2024</li>
+      </ul>
+
+      <a download href="/public/FOTO.JPG">
+        <img
+          id="avatar"
+          width="250"
+          height=""
+          title="Foto de eduardferre"
+          src="/public/FOTO.JPG"
+          alt="Una fotografía de Eduard Ferré mirando a cámara con la toga de la graduación"
+        />
+      </a>
+
+      <h2 id="proyectos">Proyectos realizados</h2>
+
+      <aside>
+        <header><h3>Mis tecnologías favoritas</h3></header>
+
+        <ol>
+          <li>Python</li>
+          <li>Node.js</li>
+          <li>JavaScript</li>
+          <li>TypeScript</li>
+        </ol>
+      </aside>
+
+      <section>
+        <article>
+          <header><h4>eGym Application</h4></header>
+          <img
+            style="width: 25%; aspect-ratio: 343/697"
+            loading="lazy"
+            src="/public/egym.png"
+            alt="Captura de el inicio de sesión a la aplicación de eGym"
+          />
+          <p>Desarrollo de una aplicación para el gimnasio</p>
+          <footer>
+            <small
+              >Tecnologías utilizadas: Swift, SwiftUI, Python, FastAPI</small
+            >
+          </footer>
+        </article>
+        <article>
+          <header><h4>eGym Application</h4></header>
+          <p>Desarrollo de una aplicación para el gimnasio</p>
+          <footer>
+            <small
+              >Tecnologías utilizadas: Swift, SwiftUI, Python, FastAPI</small
+            >
+          </footer>
+        </article>
+        <article>
+          <header><h4>eGym Application</h4></header>
+          <p>Desarrollo de una aplicación para el gimnasio</p>
+          <footer>
+            <small
+              >Tecnologías utilizadas: Swift, SwiftUI, Python, FastAPI</small
+            >
+          </footer>
+        </article>
+      </section>
+
+      <section>
+        <h2>Preguntas frecuentes</h2>
+
+        <details open>
+          <summary>¿Qué estudies tienes?</summary>
+          <p>
+            Estudié en la UPC de Castelldefels Ingeniería Aeroespacial e
+            Ingeniería Telemática
+          </p>
+        </details>
+
+        <details>
+          <summary>¿Cuáles son tus hobbies?</summary>
+          <p>Gimnasio, baloncesto...</p>
+        </details>
+
+        <details>
+          <summary>¿Cuál es tu lenguaje favorito?</summary>
+          <p>
+            El lenguaje con el que aprendí y me enamoré de la programación fue
+            Python
+          </p>
+        </details>
+      </section>
+
+      <section>
+        <h2>Formulario de contacto</h2>
+
+        <form method="post" action="/">
+          <fieldset>
+            <legend>Información Personal</legend>
+
+            <div>
+              <!-- <label for="name">Nombre:</label> -->
+              <label
+                >Nombre:
+                <input type="text" name="name" placeholder="Eduard" required />
+              </label>
+            </div>
+
+            <div>
+              <label
+                >Email:
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="eduardferre@test.test"
+                  required
+                />
+              </label>
+            </div>
+
+            <div>
+              <label
+                >Fecha de nacimiento:
+                <input type="date" name="birthdate" required />
+              </label>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Información Adicional</legend>
+
+            <div>
+              <label
+                >Teléfono:
+                <input
+                  type="tel"
+                  name="phone"
+                  placeholder="+34666666666"
+                  required
+                  pattern="[0-9]{9}"
+                />
+              </label>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Otros</legend>
+
+            <div>
+              <label for="why">¿Por qué quieres contactar?</label>
+              <select name="why" id="why">
+                <option value="1">Contratar</option>
+                <option value="2">Recomendaciones</option>
+                <option value="3">Más información</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="terms">¿Aceptas los términos y condiciones?</label>
+              <input type="checkbox" id="terms" name="terms" required />
+            </div>
+
+            <div>
+              <datalist id="languages">
+                <option value="JavaScript"></option>
+                <option value="Java"></option>
+                <option value="Go"></option>
+                <option value="Python"></option>
+              </datalist>
+              <label
+                >¿Con que lengujaje crees que me desenvuelvo mejor?
+                <input list="languages" name="languages" />
+              </label>
+            </div>
+          </fieldset>
+
+          <!-- <input type="submit" value="Enviar contacto" /> -->
+          <!-- <button type="submit">Enviar contacto</button> -->
+          <button>Enviar contacto</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      Copyright © 2024 - Portfolio de Eduard Ferré
+
+      <a href="mailto:eduardferre@test.test">Envíame a un correo</a>
+      <a href="tel:+34666666666">Llamar por teléfono</a>
+      <a href="whatsapp://send?text=Hola eduardferre">Envíame un mensaje</a>
+    </footer>
+  </body>
+</html>
